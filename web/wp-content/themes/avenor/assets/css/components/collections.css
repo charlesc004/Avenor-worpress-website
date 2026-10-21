@@ -1,0 +1,127 @@
+.collection-grid {
+  display: grid;
+  gap: 36px;
+}
+.columns-1 {
+  grid-template-columns: 1fr;
+}
+.columns-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.columns-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.collection-card {
+  min-width: 0;
+}
+.collection-card .card-title {
+  font: 400 28px/1.2 var(--wp--preset--font-family--serif);
+  margin: 20px 0 14px;
+}
+.collection-card .card-title a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.collection-card .card-title a span {
+  font: 22px var(--wp--preset--font-family--sans);
+  transition: transform 0.2s;
+}
+.collection-card .card-title a:hover span {
+  transform: translate(3px, -3px);
+}
+.collection-card > p:not(.eyebrow) {
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--wp--preset--color--muted);
+  margin: 0;
+  max-width: 38ch;
+}
+.services-grid .collection-card {
+  border-top: 1px solid var(--avenor-border);
+}
+.card-number {
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  color: var(--wp--preset--color--accent);
+}
+.card-image {
+  overflow: hidden;
+  background: var(--wp--preset--color--line);
+  aspect-ratio: 4/3;
+}
+.card-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+.collection-card:has(a:hover) .card-image img {
+  transform: scale(1.035);
+}
+.case-studies-grid .eyebrow,
+.team-grid .eyebrow {
+  margin: 24px 0 10px;
+  color: var(--wp--preset--color--muted);
+  font-size: 10px;
+}
+.case-studies-grid .card-title,
+.team-grid .card-title {
+  margin-top: 0;
+}
+.case-studies-grid .collection-grid {
+  row-gap: 60px;
+}
+.team-grid .card-image {
+  aspect-ratio: 3/4;
+}
+.team-grid img {
+  filter: grayscale(1);
+}
+.testimonials blockquote {
+  margin: 0;
+}
+.testimonials blockquote p {
+  font: 400 clamp(25px, 3vw, 38px) / 1.4 var(--wp--preset--font-family--serif);
+  margin: 20px 0 30px;
+}
+.testimonials cite {
+  font: 12px var(--wp--preset--font-family--sans);
+  color: var(--wp--preset--color--muted);
+  font-style: normal;
+}
+.testimonials .collection-card {
+  border-top: 1px solid var(--avenor-border);
+  padding-top: 24px;
+}
+.collection-filters {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 0 0 45px;
+}
+.collection-filters a {
+  padding: 10px 20px;
+  border: 1px solid var(--avenor-border);
+  font-size: 12px;
+  text-decoration: none;
+}
+.collection-filters a[aria-current],
+.collection-filters a:hover {
+  background: var(--wp--preset--color--ink);
+  border-color: var(--wp--preset--color--ink);
+}
+.pagination {
+  display: flex;
+  gap: 16px;
+  margin-top: 40px;
+}
+.pagination:empty {
+  display: none;
+}
+.pagination .page-numbers {
+  padding: 8px 12px;
+}

@@ -1,0 +1,81 @@
+.delivery-standards {
+  background: var(--wp--preset--color--soft);
+}
+.standards-grid,
+.industries-grid,
+.practice-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 22px;
+}
+.standards-grid > *,
+.industries-grid > *,
+.practice-grid > *,
+.platform-grid > * {
+  margin-block: 0;
+}
+.standard-card,
+.practice-card {
+  border-top: 1px solid var(--wp--preset--color--line);
+  padding-top: 26px;
+}
+.standard-card h3,
+.industry-card h3,
+.practice-card h3 {
+  font: 400 27px/1.2 var(--wp--preset--font-family--serif);
+  margin: 22px 0 16px;
+}
+.standard-card > p:not(.eyebrow),
+.industry-card p,
+.practice-card p {
+  font-size: 13px;
+  line-height: 1.9;
+  color: var(--wp--preset--color--muted);
+}
+.standard-card .eyebrow {
+  font-size: 9px;
+  letter-spacing: 0.12em;
+}
+.industry-card {
+  background: var(--wp--preset--color--white);
+  padding: 28px;
+  border-radius: 6px;
+  border: 1px solid var(--wp--preset--color--line);
+}
+.industry-card h3 {
+  margin-top: 0;
+}
+.practice-section h2 {
+  font-size: clamp(36px, 4vw, 58px);
+  letter-spacing: -0.035em;
+  margin-block: 22px 45px;
+}
+.platform-foundations {
+  background: var(--wp--preset--color--soft);
+}
+.platform-intro {
+  max-width: 800px;
+}
+.platform-intro h2 {
+  font-size: clamp(36px, 4vw, 58px);
+  line-height: 1.15;
+  letter-spacing: -0.035em;
+}
+.platform-intro > p:not(.eyebrow) {
+  max-width: 58ch;
+  font-size: 14px;
+  color: var(--wp--preset--color--muted);
+}
+.platform-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 28px;
+  border-top: 1px solid var(--wp--preset--color--line);
+  margin-top: 45px;
+  padding-top: 26px;
+}
+.platform-item p:last-child {
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 12px 0 0;
+}

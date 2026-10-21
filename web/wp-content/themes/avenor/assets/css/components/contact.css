@@ -1,0 +1,53 @@
+.contact-cta {
+  margin-inline: 24px;
+  border-radius: 10px 10px 0 0;
+}
+.contact-cta h2 {
+  font-size: clamp(44px, 5.3vw, 76px);
+}
+.contact-cta .wp-block-button__link {
+  min-height: 58px;
+  border-radius: 4px;
+}
+.avenor-contact-form {
+  padding: 36px;
+  border: 1px solid var(--avenor-border);
+  border-radius: 8px;
+}
+.avenor-contact-form input:not([type="checkbox"], [type="hidden"]),
+.avenor-contact-form select,
+.avenor-contact-form textarea {
+  background: var(--wp--preset--color--paper);
+  border: 1px solid var(--avenor-border);
+  padding: 13px 14px;
+  border-radius: 4px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+.avenor-contact-form input:focus,
+.avenor-contact-form select:focus,
+.avenor-contact-form textarea:focus {
+  border-color: var(--wp--preset--color--accent);
+}
+.avenor-contact-form button {
+  border-radius: 4px;
+}
+.contact-intro .business-profile {
+  padding-top: 26px;
+  border-top: 1px solid var(--avenor-border);
+}
+.contact-intro .business-profile > a {
+  font-size: 21px;
+}
+.contact-next {
+  margin-top: 36px;
+  border-top: 1px solid var(--avenor-border);
+  padding-top: 24px;
+}
+.contact-next p {
+  font-size: 13px;
+  line-height: 1.8;
+}
+.site-footer {
+  padding-top: 60px;
+}

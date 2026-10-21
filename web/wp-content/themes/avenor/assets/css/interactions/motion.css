@@ -1,0 +1,87 @@
+/* Motion is decorative. All content is visible before the enhancement loads. */
+.avenor-motion-word {
+  display: inline-block;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  transform-origin: 0 100%;
+}
+.avenor-scroll-progress {
+  position: fixed;
+  inset: 0 0 auto;
+  height: 2px;
+  z-index: 80;
+  pointer-events: none;
+  background: linear-gradient(90deg, #a8c9ab, #c3a886);
+  transform: scaleX(var(--avenor-progress, 0));
+  transform-origin: left;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .hero-visual > .hero-image img {
+    transform: translate3d(0, var(--avenor-image-shift, 0px), 0) scale(1.12);
+  }
+  .wp-block-button__link {
+    position: relative;
+    translate: var(--avenor-magnet-x, 0px) var(--avenor-magnet-y, 0px);
+    transition:
+      translate 180ms ease-out,
+      background-color 220ms,
+      color 220ms,
+      box-shadow 220ms;
+  }
+  .wp-block-button__link:hover {
+    box-shadow: 0 8px 26px #a8c9ab18;
+  }
+  .services-grid .collection-card {
+    position: relative;
+    isolation: isolate;
+    transition:
+      background-color 240ms,
+      border-color 240ms,
+      box-shadow 240ms,
+      transform 280ms cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .services-grid .collection-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: radial-gradient(
+      260px circle at var(--avenor-pointer-x, 50%) var(--avenor-pointer-y, 50%),
+      #a8c9ab18,
+      transparent 75%
+    );
+    opacity: 0;
+    transition: opacity 250ms;
+    pointer-events: none;
+    z-index: -1;
+  }
+  .services-grid .collection-card:hover::before {
+    opacity: 1;
+  }
+  .text-link {
+    transition:
+      color 200ms,
+      text-decoration-color 200ms;
+    text-underline-offset: 7px;
+  }
+  .text-link:hover {
+    text-decoration-color: var(--wp--preset--color--accent);
+    color: var(--wp--preset--color--accent);
+  }
+}
+@media (hover: none), (pointer: coarse) {
+  .hero-visual > .hero-image img {
+    transform: none;
+  }
+  .wp-block-button__link {
+    translate: none;
+  }
+  .services-grid .collection-card::before {
+    display: none;
+  }
+}
+@media (prefers-reduced-motion: reduce), print {
+  .avenor-scroll-progress {
+    display: none;
+  }
+}

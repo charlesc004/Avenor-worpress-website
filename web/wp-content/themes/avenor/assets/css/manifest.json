@@ -1,0 +1,40 @@
+{
+  "editor": [
+    "foundation/base.css",
+    "components/chrome.css",
+    "components/collections.css",
+    "components/forms.css",
+    "layouts/compositions.css",
+    "layouts/content.css",
+    "responsive/layouts.css",
+    "components/identity.css",
+    "components/editorial.css",
+    "components/contact.css",
+    "responsive/tablet.css",
+    "responsive/mobile.css",
+    "foundation/palette.css",
+    "components/standards.css",
+    "components/people-portfolio.css",
+    "responsive/compact-home.css"
+  ],
+  "frontend": [
+    "foundation/base.css",
+    "components/chrome.css",
+    "components/collections.css",
+    "components/forms.css",
+    "layouts/compositions.css",
+    "layouts/content.css",
+    "responsive/layouts.css",
+    "components/identity.css",
+    "components/editorial.css",
+    "components/contact.css",
+    "responsive/tablet.css",
+    "responsive/mobile.css",
+    "foundation/palette.css",
+    "components/standards.css",
+    "components/people-portfolio.css",
+    "responsive/compact-home.css",
+    "interactions/motion.css",
+    "interactions/mobile-menu.css"
+  ]
+}

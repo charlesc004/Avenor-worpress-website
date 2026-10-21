@@ -1,0 +1,98 @@
+.expertise-grid,
+.partnership-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 40px;
+}
+.team-section > .avenor-width > h2,
+.testimonials-section > .avenor-width > h2 {
+  font-size: clamp(34px, 4.2vw, 62px);
+  line-height: 1.1;
+  max-width: 900px;
+  margin: 20px 0 26px;
+}
+.team-section > .avenor-width > p:not(.eyebrow) {
+  max-width: 720px;
+  color: var(--wp--preset--color--muted);
+}
+.expertise-card,
+.partnership-card {
+  padding: clamp(24px, 3vw, 42px);
+  background: var(--wp--preset--color--soft);
+  border: 1px solid var(--wp--preset--color--line);
+  border-radius: 4px;
+}
+.expertise-card h3,
+.partnership-card h3 {
+  font-size: clamp(25px, 3vw, 36px);
+  margin: 24px 0 16px;
+}
+.expertise-card p:last-child,
+.partnership-card p:last-child {
+  margin-bottom: 0;
+  color: var(--wp--preset--color--muted);
+}
+.team-section .team-grid,
+.testimonials-section .testimonials {
+  margin-top: 28px;
+}
+.collection-introduction {
+  grid-column: 1 / -1;
+  padding: 26px 0;
+  border-top: 1px solid var(--wp--preset--color--line);
+}
+.collection-introduction h3 {
+  font-size: 23px;
+  margin: 0 0 12px;
+}
+.collection-introduction p {
+  color: var(--wp--preset--color--muted);
+}
+.collection-introduction .text-link {
+  color: var(--wp--preset--color--accent);
+  display: inline-block;
+  margin-top: 8px;
+}
+.portfolio-section {
+  background: var(--wp--preset--color--soft);
+  border-block: 1px solid var(--wp--preset--color--line);
+}
+.portfolio-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  align-items: start;
+  gap: clamp(32px, 6vw, 90px);
+}
+.portfolio-intro h2 {
+  font-size: clamp(32px, 4vw, 54px);
+}
+.portfolio-disciplines {
+  color: var(--wp--preset--color--accent);
+  font-size: 13px;
+  padding-top: 22px;
+  border-top: 1px solid var(--wp--preset--color--line);
+  margin-top: 32px;
+}
+.portfolio-grid .card-image {
+  aspect-ratio: 3 / 2;
+  border: 1px solid var(--wp--preset--color--line);
+  border-radius: 4px;
+}
+.portfolio-grid .card-image img {
+  object-fit: contain;
+  object-position: top;
+  filter: none;
+}
+@media (max-width: 781px) {
+  .portfolio-layout {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 650px) {
+  .expertise-grid,
+  .partnership-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}

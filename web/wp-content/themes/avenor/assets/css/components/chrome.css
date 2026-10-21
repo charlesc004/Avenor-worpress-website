@@ -1,0 +1,74 @@
+/* Shared cards, navigation, forms and footer. */
+.site-footer .muted {
+  color: #bdc9c1;
+}
+.site-header {
+  border-bottom: 1px solid var(--avenor-border);
+}
+.site-header .wp-block-site-title {
+  font-size: 27px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  line-height: 1;
+}
+.site-header .wp-block-site-title a {
+  text-decoration: none;
+}
+.site-header .wp-block-navigation {
+  font-size: 13px;
+}
+.site-header .wp-block-navigation__container {
+  gap: 30px;
+}
+.site-header .wp-block-button__link {
+  min-height: 44px;
+  padding: 10px 22px;
+  font-size: 12px;
+  gap: 24px;
+}
+.site-header .wp-block-navigation-item__content {
+  text-decoration: none;
+}
+.site-header .wp-block-navigation-item__content:hover {
+  color: var(--wp--preset--color--accent);
+}
+.site-footer {
+  padding: 70px 0 25px;
+}
+.site-footer a {
+  text-decoration: none;
+}
+.site-footer a:hover {
+  text-decoration: underline;
+}
+.site-footer .wp-block-site-title {
+  font-size: 40px;
+  letter-spacing: 0.14em;
+}
+.site-footer .footer-links {
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+  font-size: 13px;
+}
+.footer-bottom {
+  border-top: 1px solid #46534d;
+  padding-top: 26px;
+  margin-top: 60px;
+  font-size: 11px;
+  color: #c1cac5;
+}
+.footer-bottom p {
+  margin: 0;
+}
+.business-profile {
+  font-size: 14px;
+  line-height: 1.8;
+}
+.business-profile > a {
+  display: inline-block;
+  margin-right: 20px;
+}
+.business-profile p {
+  margin-block: 6px;
+}
