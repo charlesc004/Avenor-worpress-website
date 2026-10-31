@@ -3,7 +3,7 @@ import { mkdirSync } from 'node:fs';
 
 test('homepage uses live service and project collections', async ({ page }) => {
   await page.goto('/');
-  await expect(page.getByRole('heading', { level: 1 })).toContainText('Clarity in a');
+  await expect(page.getByRole('heading', { level: 1 })).toContainText('MAKE YOUR');
   await expect(page.locator('.services-grid article')).toHaveCount(3);
   await expect(page.locator('.services-grid h3.card-title')).toHaveCount(3);
   await expect(page.locator('.case-studies-grid:not(.portfolio-grid) article')).toHaveCount(0);
@@ -164,7 +164,7 @@ test('night theme and business pages contain only release content', async ({ pag
     const copy = await page.locator('body').innerText();
     expect(copy).not.toMatch(/\bdemo\b|fictional|demonstration|concept portfolio|sample inquiry/i);
     const color = await page.locator('body').evaluate((element) => getComputedStyle(element).backgroundColor);
-    expect(color).toBe('rgb(12, 21, 23)');
+    expect(color).toBe('rgb(16, 17, 19)');
   }
   await page.goto('/');
   await expect(page.locator('.standard-card, .industry-card, .platform-item')).toHaveCount(0);

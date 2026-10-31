@@ -1,105 +1,83 @@
 <?php
 /**
- * Title: Four-stage process
+ * Title: Process Section
  * Slug: avenor/process-section
  * Categories: avenor
  * @package Avenor
  */
 ?>
 
-<!-- wp:group {"className":"section section-rule","tagName":"section"} -->
-<section class="wp-block-group section section-rule">
-<!-- wp:group {"className":"avenor-width"} -->
-<div class="wp-block-group avenor-width">
-<!-- wp:group {"className":"intro-row"} -->
-<div class="wp-block-group intro-row">
+<!-- wp:group {"className":"avenor-width section process-section","tagName":"section"} -->
+<section class="wp-block-group avenor-width section process-section">
+<!-- wp:group {"className":"section-heading-row"} -->
+<div class="wp-block-group section-heading-row">
+<!-- wp:group -->
+<div class="wp-block-group">
 <!-- wp:paragraph {"className":"eyebrow"} -->
-<p class="eyebrow">04 / How we work</p>
+<p class="eyebrow">THE DELIVERY LOOP</p>
 <!-- /wp:paragraph -->
-
-<!-- wp:group {"className":""} -->
-<div class="wp-block-group ">
 <!-- wp:heading {"level":2} -->
-<h2 class="wp-block-heading">Rigorous thinking.<br/>Human by design.</h2>
+<h2 class="wp-block-heading">Forward is a process.</h2>
 <!-- /wp:heading -->
-
-<!-- wp:paragraph {"className":"intro-copy"} -->
-<p class="intro-copy">A clear process, shaped around your challenge. We work with you at every step, from the first conversation to the next opportunity.</p>
-<!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
 </div>
 <!-- /wp:group -->
-
 <!-- wp:group {"className":"process-grid"} -->
 <div class="wp-block-group process-grid">
 <!-- wp:group {"className":"process-step"} -->
 <div class="wp-block-group process-step">
-<!-- wp:paragraph {"className":"eyebrow"} -->
-<p class="eyebrow">01</p>
+<!-- wp:paragraph {"className":"step-number"} -->
+<p class="step-number">01</p>
 <!-- /wp:paragraph -->
-
 <!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading">Discover</h3>
+<h3 class="wp-block-heading">Find the signal</h3>
 <!-- /wp:heading -->
-
 <!-- wp:paragraph -->
-<p>Ask the right questions. Listen closely. Understand the business behind the brief.</p>
+<p>We question assumptions, map the challenge and agree what progress means.</p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
-
 <!-- wp:group {"className":"process-step"} -->
 <div class="wp-block-group process-step">
-<!-- wp:paragraph {"className":"eyebrow"} -->
-<p class="eyebrow">02</p>
+<!-- wp:paragraph {"className":"step-number"} -->
+<p class="step-number">02</p>
 <!-- /wp:paragraph -->
-
 <!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading">Strategize</h3>
+<h3 class="wp-block-heading">Shape the system</h3>
 <!-- /wp:heading -->
-
 <!-- wp:paragraph -->
-<p>Define a clear direction, connect the opportunities, and decide what matters most.</p>
+<p>We connect the experience, content and technology before adding complexity.</p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
-
 <!-- wp:group {"className":"process-step"} -->
 <div class="wp-block-group process-step">
-<!-- wp:paragraph {"className":"eyebrow"} -->
-<p class="eyebrow">03</p>
+<!-- wp:paragraph {"className":"step-number"} -->
+<p class="step-number">03</p>
 <!-- /wp:paragraph -->
-
 <!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading">Design</h3>
+<h3 class="wp-block-heading">Make it work</h3>
 <!-- /wp:heading -->
-
 <!-- wp:paragraph -->
-<p>Turn insight into intuitive experiences that feel considered at every touchpoint.</p>
+<p>We build in focused increments, test with intent and make decisions visible.</p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
-
 <!-- wp:group {"className":"process-step"} -->
 <div class="wp-block-group process-step">
-<!-- wp:paragraph {"className":"eyebrow"} -->
-<p class="eyebrow">04</p>
+<!-- wp:paragraph {"className":"step-number"} -->
+<p class="step-number">04</p>
 <!-- /wp:paragraph -->
-
 <!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading">Deliver</h3>
+<h3 class="wp-block-heading">Leave it stronger</h3>
 <!-- /wp:heading -->
-
 <!-- wp:paragraph -->
-<p>Build with care, measure what matters, and create the foundations for what comes next.</p>
+<p>We document, transfer ownership and plan the next useful improvement.</p>
 <!-- /wp:paragraph -->
-</div>
-<!-- /wp:group -->
 </div>
 <!-- /wp:group -->
 </div>
 <!-- /wp:group -->
 </section>
 <!-- /wp:group -->
-

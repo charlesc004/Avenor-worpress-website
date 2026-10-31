@@ -2,16 +2,16 @@
 
 # AVENOR
 
-### Independent thinking. Meaningful progress.
+### Make your next move.
 
 A premium corporate website and custom WordPress CMS for a digital consulting practice.
 
-**Strategy · Design · Technology**
+**Strategy · Design · Engineering**
 
 ![WordPress](https://img.shields.io/badge/WordPress-Native%20blocks-21759B?style=flat-square)
 ![PHP](https://img.shields.io/badge/PHP-8.3%2B-777BB4?style=flat-square)
 ![Node](https://img.shields.io/badge/Node-24.18%2B-43853D?style=flat-square)
-![Interface](https://img.shields.io/badge/Interface-Dark%20editorial-A8C9AB?style=flat-square)
+![Interface](https://img.shields.io/badge/Interface-Signal%20dark-D2F65A?style=flat-square)
 
 [Screenshots](#desktop-showcase) · [Quick start](#quick-start) · [Features](#experience-and-capabilities) · [Architecture](#architecture) · [Content management](#content-management) · [Quality](#quality-and-verification) · [Documentation](#documentation)
 
@@ -25,7 +25,7 @@ A custom block theme handles presentation, while the **AVENOR Core** companion p
 
 | Area | Approach |
 | --- | --- |
-| Public experience | Responsive layouts, dark surfaces, sage accents and expressive typography |
+| Public experience | Responsive layouts, ink-black surfaces, electric chartreuse and bold grotesk typography |
 | Content editing | Gutenberg, reusable patterns, template parts and full-site editing |
 | Business functionality | Services, architecture guides, projects, inquiries and business settings |
 | Interaction | Page entrances, scroll reveals, pointer feedback and animated mobile navigation |
@@ -37,18 +37,18 @@ Six views of the AVENOR interface, captured at **1440 × 1080**. Select any imag
 
 | Home · First impressions | About · The practice |
 | :--- | :--- |
-| [![AVENOR homepage with editorial headline, architecture imagery and sage actions](docs/screenshots/01-home.png)](docs/screenshots/01-home.png) | [![AVENOR About page introducing the practice and its perspective](docs/screenshots/02-about.png)](docs/screenshots/02-about.png) |
-| A focused introduction with a bold headline, architectural imagery and clear paths into the site. | The practice's perspective and editorial identity, paired with studio photography. |
+| [![AVENOR Signal homepage with bold typography and a custom chartreuse geometric graphic](docs/screenshots/01-home.png)](docs/screenshots/01-home.png) | [![AVENOR About page introducing the practice and its perspective](docs/screenshots/02-about.png)](docs/screenshots/02-about.png) |
+| Oversized grotesk typography, a custom geometric signal and a clear next step. | A new studio composition, operating principles and a connected delivery process. |
 
 | Services · Connected expertise | Solutions · Architecture library |
 | :--- | :--- |
 | [![AVENOR service archive with category filters and reusable capability cards](docs/screenshots/03-services.png)](docs/screenshots/03-services.png) | [![AVENOR solution archive with industry filters and architectural image cards](docs/screenshots/04-solutions.png)](docs/screenshots/04-solutions.png) |
-| Category filters and structured cards make the available capabilities easy to explore. | Industry filters introduce architecture guides with dedicated scope and acceptance criteria. |
+| Category filters and structured cards make the available capabilities easy to explore. | A horizontal architecture catalog connects industry filters, scope and acceptance criteria. |
 
 | Insights · Latest thinking | Contact · Start a conversation |
 | :--- | :--- |
 | [![AVENOR Insights page with photography and recent editorial articles](docs/screenshots/05-insights.png)](docs/screenshots/05-insights.png) | [![AVENOR contact page with business details, next steps and a structured inquiry form](docs/screenshots/06-contact.png)](docs/screenshots/06-contact.png) |
-| An image-led article collection for perspectives on strategy, design and technology. | Business details, clear next steps and an inquiry form presented in one balanced layout. |
+| A featured editorial story leads into a two-column collection of field notes. | A bold project-brief introduction, visible next steps and a structured inquiry panel. |
 
 ## Quick start
 
@@ -97,10 +97,10 @@ Search, taxonomy archives, pagination, related content and a custom 404 complete
 
 ### Visual identity and motion
 
-The public site and editor canvas share graphite and petroleum surfaces, sage actions, restrained copper details and light typography. Local photography, responsive images and system fonts support consistent rendering without a remote font dependency.
+The public site and editor canvas share ink-black surfaces, electric chartreuse actions, lavender details and bold sans-serif typography. A custom vector signal introduces the three connected disciplines. Local photography, responsive images and system fonts support consistent rendering without a remote font dependency.
 
-- Rounded desktop navigation with hover, focus and active states.
-- Floating mobile navigation with capsule links and a hamburger-to-cross transition.
+- Numbered desktop navigation with clear hover, focus and active states.
+- A numbered mobile navigation sheet with a hamburger-to-cross transition.
 - Staggered headline entrances, scroll reveals and bounded hero-image parallax.
 - Fine-pointer card spotlights, button feedback and a decorative reading-progress indicator.
 - Reduced-motion support, keyboard navigation, focus management and usable content without JavaScript.
@@ -131,7 +131,7 @@ Initialization does not publish invented staff or client endorsements. Team and 
 | Review submissions and update workflow status | **Inquiries** |
 | Export or erase associated personal data | **Tools → Export/Erase Personal Data** |
 
-The theme includes **23 reusable patterns** and six custom blocks: Services Grid, Case Studies Grid, Contact Form, Team Grid, Testimonials and Business Profile. Patterns remain ordinary editable blocks after insertion.
+The theme includes **16 reusable patterns** and six custom blocks: Services Grid, Case Studies Grid, Contact Form, Team Grid, Testimonials and Business Profile. Patterns remain ordinary editable blocks after insertion.
 
 Services and Solutions use native archives. Edit their introductions in the Site Editor rather than creating competing Pages at the same URLs. Archive batch sizes follow WordPress's main query; embedded collection counts are configured in the block sidebar and limited to 12.
 
@@ -200,7 +200,7 @@ docs/                       Design, architecture, editing and verification
 
 Collection queries and card renderers are shared across homepage sections, archives, taxonomy filters and related content. Contact rendering and validation have focused components. Editor controls reuse shared fields and options; initialization is divided into ordered content steps.
 
-CSS uses **18 ordered source components** compiled into one frontend stylesheet and one editor stylesheet. Native frontend modules resolve through WordPress's import map, with individual file versions for cache invalidation.
+CSS uses **9 ordered source components** compiled into one frontend stylesheet and one editor stylesheet. Native frontend modules resolve through WordPress's import map, with individual file versions for cache invalidation.
 
 `npm run check:architecture` checks module dependencies, cycles, missing or unused registrations, the CSS manifest, and source components exceeding **10 KB or 240 lines**. Generated assets, dependencies and tests are excluded from the size rule.
 
@@ -246,17 +246,17 @@ Browser tests accept `BASE_URL`, `WP_ADMIN_USER` and `WP_ADMIN_PASSWORD`. They e
 
 ## Quality and verification
 
-The latest recorded local audit was completed on **22 October 2026**. These are executed local results; the supplied GitHub Actions workflow has not been run from this environment.
+The prior recorded local audit was completed on **22 October 2026**. The Signal redesign on **29 October 2026** replaces the presentation system; its validation is documented in the verification report. These are executed local results; the supplied GitHub Actions workflow has not been run from this environment.
 
 | Check | Recorded result |
 | --- | --- |
-| Browser integration | **22 Playwright tests passed** |
+| Browser integration | **24 Playwright tests passed**, with no skipped or flaky tests |
 | PHP integration | **14 tests · 80 assertions passed** |
-| PHP syntax | **75 files passed** |
+| PHP syntax | **67 files passed** after retiring obsolete presentation sources |
 | JavaScript / PHP standards | Lint and WordPress coding checks passed |
 | Asset builds and architecture | Editor bundle, compiled styles and source checks passed |
-| Gutenberg validation | All **23 patterns** parsed as valid blocks |
-| Visual regression review | **16 viewport comparisons** preserved computed appearance after accounting for intentional heading semantics |
+| Gutenberg validation | All **16 patterns** parsed as valid blocks |
+| Prior visual regression review | The earlier audit recorded 16 comparisons; Signal intentionally replaces that appearance |
 | Automated accessibility | No violations for configured axe tags on eight public pages and the mobile drawer |
 | Production npm audit / Composer audit | No known advisories reported in the recorded runs |
 

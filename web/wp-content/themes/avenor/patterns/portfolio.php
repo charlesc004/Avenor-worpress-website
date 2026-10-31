@@ -1,43 +1,41 @@
 <?php
 /**
- * Title: Delivered projects
+ * Title: Portfolio
  * Slug: avenor/portfolio
  * Categories: avenor
  * @package Avenor
  */
 ?>
 
-<!-- wp:group {"className":"section portfolio-section"} -->
-<div class="wp-block-group section portfolio-section">
-<!-- wp:group {"className":"avenor-width"} -->
-<div class="wp-block-group avenor-width">
-<!-- wp:group {"className":"portfolio-layout"} -->
-<div class="wp-block-group portfolio-layout">
-<!-- wp:group {"className":"portfolio-intro"} -->
-<div class="wp-block-group portfolio-intro">
+<!-- wp:group {"className":"avenor-width section portfolio-section","tagName":"section"} -->
+<section class="wp-block-group avenor-width section portfolio-section">
+<!-- wp:group {"className":"section-heading-row"} -->
+<div class="wp-block-group section-heading-row">
+<!-- wp:group -->
+<div class="wp-block-group">
 <!-- wp:paragraph {"className":"eyebrow"} -->
-<p class="eyebrow">Inside the work / In-house platform</p>
+<p class="eyebrow">02 / IN PRACTICE</p>
 <!-- /wp:paragraph -->
-
 <!-- wp:heading {"level":2} -->
-<h2 class="wp-block-heading">From a clear brief<br/><em>to a working platform.</em></h2>
+<h2 class="wp-block-heading">Not just a point of view.<br>A working system.</h2>
 <!-- /wp:heading -->
-
-<!-- wp:paragraph -->
-<p>Explore the thinking and implementation behind AVENOR’s own digital home: a custom publishing system, a considered dark interface, and a connected inquiry workflow.</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph {"className":"portfolio-disciplines"} -->
-<p class="portfolio-disciplines">Strategy / Experience / WordPress engineering</p>
+</div>
+<!-- /wp:group -->
+<!-- wp:paragraph {"className":"section-link"} -->
+<p class="section-link"><a href="/work/">View solution library ↗</a></p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
-
-<!-- wp:avenor/case-studies-grid {"contentKind":"project","count":4,"columns":1} /-->
+<!-- wp:group {"className":"project-intro"} -->
+<div class="wp-block-group project-intro">
+<!-- wp:paragraph {"className":"eyebrow"} -->
+<p class="eyebrow">AVENOR / IN-HOUSE PLATFORM</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"className":"project-deck"} -->
+<p class="project-deck">Strategy meets a living publishing platform. Built, operated and documented by the same practice.</p>
+<!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
-</div>
+<!-- wp:avenor/case-studies-grid {"count":1,"columns":1,"contentKind":"project"} /-->
+</section>
 <!-- /wp:group -->
-</div>
-<!-- /wp:group -->
-

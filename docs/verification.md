@@ -1,5 +1,7 @@
 # Verification and delivery report
 
+Current presentation: **Signal**, implemented on 29 October 2026 and reviewed again on 31 October 2026. The current result is **24/24 browser tests passed**, **14 PHP tests / 80 assertions passed**, and zero violations in the configured automated accessibility checks across eight public pages and the mobile menu. See [Signal redesign verification](#signal-redesign-verification) below. Earlier sections retain the implementation history and do not describe the current appearance.
+
 Verified locally on 21 October 2026. No supplied reference images were available. The initial repository contained no files to migrate or preserve; no NORVA content was found.
 
 ## Installed versions
@@ -112,3 +114,30 @@ Fixed character-vs-byte validation/truncation for multilingual input, archive he
 Executed validation: **all 22 browser tests passed in 4.4 minutes**, **14 PHP integration tests with 80 assertions passed**, **75 PHP files passed syntax validation**, and WordPress-Core formatting checks passed. JavaScript lint, production editor build, compiled styles and architecture checks passed. The intermittent portfolio-click failure was reproduced, fixed by retaining stationary interactive hit areas, passed three repeated route tests, and passed again in the complete browser suite. Public form fixtures were cleaned afterward.
 
 Tooling was updated to WordPress Scripts 35 and cssnano 8. npm advisories fell from 110 to **60 remaining development-tool advisories (24 high, 36 moderate)**. npm's production-only audit and Composer audit reported **zero** known advisories. These results do not claim full security certification. No forced downgrade or hidden suppression was used. Local tests used SQLite; Docker/MySQL, remote CI, external mail delivery and deployed performance remain unverified.
+
+## Signal redesign verification
+
+The 29 October rebuild replaces the previous presentation with an ink-black and electric chartreuse identity, bold grotesk display type, original vector artwork, numbered navigation, new page compositions, a horizontal architecture catalog, a featured editorial layout and a project-brief contact page. Theme version is 2.0.0. The implementation remains a native WordPress theme and companion plugin.
+
+Nine CSS source components replace the former eighteen. The production frontend stylesheet is **31,374 bytes**, and editor CSS is **26,815 bytes**, before transport compression. Sixteen native patterns replace the previous twenty-three. Earlier incremental presentation scripts were retired in favor of a shared composition map and one versioned migration. Existing page/navigation revisions were saved before replacement; business records and private inquiries were preserved. A source and local database backup was saved outside the public web root before changes.
+
+| Check | Executed result |
+| --- | --- |
+| Full Playwright suite, 29 October | **24 passed; 0 failed, flaky or skipped**; confirmed from the saved HTML report |
+| PHP integration | **14 passed / 80 assertions** on isolated SQLite |
+| PHP syntax | **67 source files valid** |
+| PHP coding standards | Passed after source formatting; checked again 31 October |
+| JavaScript lint | Passed |
+| Production build | Editor bundle and both stylesheets built successfully |
+| Architecture | **102 source files, 9 modules, 9 CSS components**; size boundaries, imports and registration valid |
+| Gutenberg | All **16 patterns** parsed as valid editable blocks; homepage editing/publishing/restoration passed |
+| Responsive coverage | Existing 15 page/viewport captures passed; added 320px and 1920px checks for Insights, Privacy, service and solution detail pages |
+| Motion and navigation | Entrances, pointer feedback, reduced motion, animated close, rapid reuse, focus restoration and short-screen scrolling passed |
+| Native contact workflow | Enhanced and no-JavaScript form submission, validation, duplicates, privacy and administrator management passed |
+| Automated accessibility, 31 October | No violations for configured WCAG A/AA/best-practice tags on eight pages and the mobile menu |
+| Repeat initialization, 31 October | Existing published editorial content remained identical |
+| Delivery images | Six 1440 × 1080 screenshots refreshed in `docs/screenshots/`; current interface captured for the in-house project and theme preview |
+
+During iteration, oversized lazy-image sizing, default Navigation colors and decorative arrows leaking into accessible names were corrected. Tests were updated for the new primary action and to poll the end of the icon transition rather than compare a floating-point transform to exact zero. An initial browser run encountered `ERR_NETWORK_IO_SUSPENDED`; affected checks passed in a targeted run, followed by the complete 24-test pass. The saved current screenshots were inspected visually.
+
+Local validation continues to use SQLite. Docker/MySQL, remote CI, external mailbox delivery and deployed performance are outside these executed results. The automated accessibility scan is not a full conformance audit. Dependency audit figures above are the earlier recorded results, not a fresh dependency scan for this redesign. No GitHub push or production deployment was performed for Signal.

@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: Shared contact call to action
+ * Title: Contact Cta
  * Slug: avenor/contact-cta
  * Categories: avenor
  * @package Avenor
@@ -9,33 +9,21 @@
 
 <!-- wp:group {"className":"contact-cta","tagName":"section"} -->
 <section class="wp-block-group contact-cta">
-<!-- wp:group {"className":"avenor-width"} -->
-<div class="wp-block-group avenor-width">
-<!-- wp:group {"className":"contact-cta-inner"} -->
-<div class="wp-block-group contact-cta-inner">
-<!-- wp:group {"className":""} -->
-<div class="wp-block-group ">
+<!-- wp:group {"className":"avenor-width contact-cta-inner"} -->
+<div class="wp-block-group avenor-width contact-cta-inner">
 <!-- wp:paragraph {"className":"eyebrow"} -->
-<p class="eyebrow">Your next chapter starts here.</p>
+<p class="eyebrow">GOOD WORK STARTS WITH A GOOD QUESTION.</p>
 <!-- /wp:paragraph -->
-
 <!-- wp:heading {"level":2} -->
-<h2 class="wp-block-heading">Let’s make<br/><em>meaningful progress.</em></h2>
+<h2 class="wp-block-heading">YOUR NEXT<br>MOVE STARTS HERE.</h2>
 <!-- /wp:heading -->
-</div>
-<!-- /wp:group -->
-
 <!-- wp:buttons -->
-<div class="wp-block-buttons">
-<!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/contact/">Start a conversation ↗</a></div>
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/contact/">Let’s talk about it <span aria-hidden="true">↗</span></a></div>
 <!-- /wp:button -->
 </div>
 <!-- /wp:buttons -->
 </div>
 <!-- /wp:group -->
-</div>
-<!-- /wp:group -->
 </section>
 <!-- /wp:group -->
-

@@ -38,7 +38,7 @@ test('scroll reveals, pointer feedback and reading progress preserve navigation'
   await card.hover({ position: { x: 60, y: 60 } });
   await expect.poll(() => card.evaluate(e => parseFloat((e as HTMLElement).style.getPropertyValue('--avenor-pointer-x')))).toBeGreaterThan(0);
   await expect.poll(() => card.evaluate(e => getComputedStyle(e, '::before').opacity)).toBe('1');
-  const button = page.getByRole('link', { name: 'Discover all services' });
+  const button = page.getByRole('link', { name: 'Build what’s next' });
   await button.hover({ position: { x: 24, y: 18 } });
   await expect.poll(() => button.evaluate(e => (e as HTMLElement).style.getPropertyValue('--avenor-magnet-x'))).not.toBe('');
   await page.mouse.move(0, 0);
@@ -46,7 +46,7 @@ test('scroll reveals, pointer feedback and reading progress preserve navigation'
   await page.evaluate(() => window.scrollTo({ top: document.body.scrollHeight, behavior: 'instant' }));
   await expect.poll(() => page.locator('.avenor-scroll-progress').evaluate(e => parseFloat((e as HTMLElement).style.getPropertyValue('--avenor-progress')))).toBeGreaterThan(0.98);
   await button.click();
-  await expect(page).toHaveURL(/\/services\//);
+  await expect(page).toHaveURL(/\/contact\//);
   expect(errors).toEqual([]);
 });
 

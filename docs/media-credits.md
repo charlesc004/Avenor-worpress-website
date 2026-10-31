@@ -11,8 +11,12 @@ Images are bundled locally for reproducible display. Source: [Unsplash](https://
 | workspace.jpg | photo-1497366754035-f200968a6e72 |
 | city.jpg | photo-1511818966892-d7d671e672a2 |
 
-Original image endpoint format: `https://images.unsplash.com/{identifier}`. Downloaded at widths of 1600px with quality 85. WordPress generates responsive attachment variants when a supported image editor is available. The editable pattern hero uses a fixed 1600px local image, deliberately loaded eagerly. Replacing a pattern image through the Media Library enables native attachment `srcset` handling.
+Original image endpoint format: `https://images.unsplash.com/{identifier}`. Downloaded at widths of 1600px with quality 85. WordPress generates responsive attachment variants when a supported image editor is available. Replacing a pattern image through the Media Library enables native attachment `srcset` handling.
+
+## Original Signal artwork
+
+`signal.svg` is an original code-authored vector composition created for AVENOR's Signal redesign. Three stacked planes, a coordinate grid, orbital lines and discipline annotations connect strategy, design and engineering. It is bundled locally and replaces the photographic homepage hero.
 ## AVENOR interface capture
 
-`avenor-platform.png` is a screenshot of the locally implemented AVENOR website, used to illustrate the in-house platform case study. It is not external client work. Architectural photography visible within the interface is covered by the image credits above.
+`avenor-platform.png` is an actual screenshot of the locally implemented Signal interface, used to illustrate AVENOR's in-house platform case study. It is not external client work. The six images under `docs/screenshots/` show the current Home, About, Services, Solutions, Insights and Contact pages at 1440 × 1080.
 

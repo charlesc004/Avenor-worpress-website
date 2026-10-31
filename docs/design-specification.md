@@ -1,35 +1,47 @@
-# AVENOR visual specification
+# AVENOR / Signal design system
 
-The current direction is a dark editorial identity for digital consulting, business transformation and technology. Graphite backgrounds and petroleum surfaces establish depth; sage highlights, light typography and restrained copper details create hierarchy.
+The 29 October 2026 redesign replaces the previous photographic editorial direction with a digital systems identity: a bold grotesk wordmark, numbered information, technical annotations and an original three-plane vector signal. The business remains an independent strategy, design and engineering practice.
 
-## Shared palette
+## Palette and typography
 
-| Token | Color | Purpose |
+| Token | Value | Role |
 | --- | --- | --- |
-| Paper | #0C1517 | Main background |
-| Soft | #111F22 | Alternating sections |
-| Surface | #18272A | Cards and forms |
-| Deep | #080F11 | Footer |
-| Ink | #E8EFEA | Primary text |
-| Muted | #A7B8B4 | Secondary text |
-| Accent | #A8C9AB | Actions and highlights |
-| Line | #2C4143 | Boundaries |
-| Copper | #C3A886 | Supporting details |
+| Paper | `#101113` | Main ink-black canvas |
+| Soft | `#17191C` | Panels and project surfaces |
+| Surface | `#1D1F23` | Image backgrounds and controls |
+| Deep | `#090A0B` | Footer |
+| Ink | `#F2F1EA` | Primary text |
+| Muted | `#A3A5A9` | Supporting copy |
+| Accent | `#D2F65A` | Electric chartreuse actions and signal |
+| Line | `#34363A` | Structural dividers |
+| Copper | `#C1B3FA` | Supporting lavender detail; legacy token name retained |
 
-The palette lives in theme.json and applies to the front end and editor. The internal white token remains the existing Surface identifier for compatibility with saved blocks; it now resolves to a dark surface. Primary actions use dark text on sage. Outlined actions and field controls remain visible on dark backgrounds.
+Tokens live in `theme.json`, shared by the editor and frontend. Arial/Helvetica supplies the grotesk display and body type; Courier New supplies technical labels. No remote font service or frontend framework is required. Display text uses tight spacing and short phrases; supporting copy remains at readable sizes with generous line height.
 
-## Composition
+## Page architecture
 
-System Georgia headlines and Arial body text avoid external font requests. The maximum container is 1328px, with 56px desktop and 20px mobile side margins. An asymmetric hero, architectural photography, focused service cards and alternating surfaces establish the visual rhythm. These are authored design decisions, not measurements from reference screenshots.
+- Home: split typographic/vector hero, three numbered capabilities, one in-house platform, two field notes, three FAQ disclosures and an accent contact band.
+- About: studio introduction with asymmetric image, four operating principles, two partnership commitments, four-step delivery loop and three delivery standards.
+- Services: compact capability introduction, category filter and two-column service panels.
+- Solutions: architecture-library introduction, industry filter and horizontal image/content rows.
+- Insights: one featured article, followed by a two-column article collection.
+- Contact: oversized project-brief headline, business information and next steps beside a structured form panel.
+- Shared chrome: compact numbered masthead, strong contact band and oversized footer wordmark.
 
-The homepage includes expertise, solution architectures, a working process, engagement choices, Insights, FAQs, delivery standards, industry contexts and platform foundations. Public content avoids unsupported client claims, invented staff identities and endorsements. Photos are illustrative stock assets; credits are recorded separately.
+The vector artwork in `assets/images/signal.svg` is an original code-authored composition of three stacked planes, orbital lines, a coordinate grid and discipline annotations. It replaces the architectural stock-photo homepage hero. Studio and article photography remain supporting content; credits are in the media guide.
 
-## Responsive behavior
+## Responsive rules
 
-Below 782px, core Navigation becomes a right-side drawer with a dark backdrop, numbered links, an explicit close control and contact action. WordPress retains focus trapping, Escape and focus return. A small script adds backdrop dismissal and desktop breakpoint cleanup. Decorative numbering has an empty CSS speech alternative so accessible link names remain unchanged.
+Containers have 56px desktop, 32px tablet and 20px phone margins. Desktop content is capped at 1440px. The masthead becomes native mobile Navigation below 782px. The mobile sheet uses numbered full-width links and an explicit contact action; WordPress retains dialog semantics, focus trapping, Escape, focus return and scroll locking.
 
-Grids reduce to two columns on tablets and stack on mobile. Forms use visible labels, focus outlines, loading states, server validation and native submission. FAQs use native Details blocks. Reduced motion preferences disable decorative transitions.
+The hero stacks on tablet/phone. Capability rows reduce to an index plus content; portfolio and architecture rows stack; article collections and form fields become one column. Short mobile menus scroll without losing the close control. Decorative numbering is excluded from accessible link names through CSS speech alternatives.
 
-## Review limits
+## Motion and usability
 
-The original three reference images were not available; exact visual-reference comparison remains unverified. Browser checks capture Home, Services, Solutions, About and Contact at 1440px, 768px and 390px, verify decoded images and horizontal overflow, and review the mobile menu separately. Local artifacts are stored under artifacts/visual-review/ and excluded from version control.
+Native modules provide word entrances, once-per-element scroll reveals, restrained hero parallax and fine-pointer feedback. Motion is event-driven, with no perpetual animation loop. Content is visible before enhancement; reduced-motion preferences cancel active animation. Interactive hit areas remain stationary. The hamburger morphs into a cross, and the menu animates out before invoking the native close action.
+
+Labels, keyboard focus outlines, privacy acknowledgment and status feedback remain explicit. Contact processing uses the existing shared backend validation and private record workflow. Automated checks supplement visual inspection; they are not an accessibility certification.
+
+## Source organization
+
+Nine CSS components replace the former eighteen: foundations, shell, hero, catalog, page compositions, inquiry, responsive layouts, motion and menu. An ordered manifest builds one frontend and one editor stylesheet. Sixteen native patterns replace the earlier compositions. `tools/signal-redesign.php` applies the approved page/navigation replacement once and keeps WordPress revisions; subsequent startup preserves editorial edits.

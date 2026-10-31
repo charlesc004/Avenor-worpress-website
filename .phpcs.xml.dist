@@ -4,11 +4,8 @@
   <file>web/wp-content/themes/avenor</file>
   <file>web/wp-content/plugins/avenor-core</file>
   <file>tools/seed.php</file>
+  <file>tools/signal-redesign.php</file>
   <file>tools/seed</file>
-  <file>tools/upgrade-experience.php</file>
-  <file>tools/publish-sections.php</file>
-  <file>tools/compact-home.php</file>
-  <file>tools/refine-navigation.php</file>
   <exclude-pattern>*/build/*</exclude-pattern>
   <arg name="extensions" value="php"/>
   <arg name="parallel" value="1"/>

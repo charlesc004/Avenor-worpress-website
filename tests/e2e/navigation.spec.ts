@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('mobile capsule supports animated exit, rapid reuse and motion preference changes', async ({ page }) => {
+test('mobile navigation supports animated exit, rapid reuse and motion preference changes', async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto('/work/');
   const open = page.getByRole('button', { name: 'Open menu' });
@@ -10,14 +10,14 @@ test('mobile capsule supports animated exit, rapid reuse and motion preference c
   const navigation = page.locator('header nav.wp-block-navigation');
   const openingLine = open.locator('.avenor-menu-icon > span').first();
   await expect(open.locator('.avenor-menu-icon')).toHaveAttribute('aria-hidden', 'true');
-  expect(await openingLine.evaluate(e => new DOMMatrix(getComputedStyle(e).transform).b)).toBe(0);
+  await expect.poll(() => openingLine.evaluate(e => Math.abs(new DOMMatrix(getComputedStyle(e).transform).b))).toBeLessThan(0.001);
   await open.click();
   await expect(dialog).toBeVisible();
   await expect(navigation).toHaveClass(/is-icon-open/);
   await expect.poll(() => close.locator('.avenor-menu-icon > span').first().evaluate(e => new DOMMatrix(getComputedStyle(e).transform).b)).toBeGreaterThan(0.6);
   await expect.poll(() => close.locator('.avenor-menu-icon > span').last().evaluate(e => new DOMMatrix(getComputedStyle(e).transform).b)).toBeLessThan(-0.6);
   await expect(dialog.locator('.current-menu-item > a')).toContainText('Solutions');
-  await expect(dialog.locator('.current-menu-item > a')).toHaveCSS('border-radius', '16px');
+  await expect(dialog.locator('.current-menu-item > a')).toHaveCSS('color', 'rgb(210, 246, 90)');
   await page.evaluate(() => Promise.all(document.getAnimations().map(a => a.finished.catch(() => {}))));
   const deferred = await close.evaluate((button: HTMLButtonElement) => {
     button.click();
@@ -27,7 +27,7 @@ test('mobile capsule supports animated exit, rapid reuse and motion preference c
   await expect(navigation).not.toHaveClass(/is-icon-open/);
   await expect(dialog).not.toBeVisible();
   await expect(open).toBeFocused();
-  expect(await openingLine.evaluate(e => new DOMMatrix(getComputedStyle(e).transform).b)).toBe(0);
+  await expect.poll(() => openingLine.evaluate(e => Math.abs(new DOMMatrix(getComputedStyle(e).transform).b))).toBeLessThan(0.001);
   await open.click();
   await close.click();
   await expect(dialog).not.toBeVisible();

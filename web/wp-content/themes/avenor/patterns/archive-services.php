@@ -7,27 +7,22 @@
  */
 ?>
 
-<!-- wp:group {"className":"avenor-width page-intro"} -->
-<div class="wp-block-group avenor-width page-intro">
+<!-- wp:group {"className":"avenor-width page-intro archive-intro"} -->
+<div class="wp-block-group avenor-width page-intro archive-intro">
 <!-- wp:paragraph {"className":"eyebrow"} -->
-<p class="eyebrow">Expertise</p>
+<p class="eyebrow">THE CAPABILITY INDEX</p>
 <!-- /wp:paragraph -->
-
 <!-- wp:heading {"level":1} -->
-<h1 class="wp-block-heading">Considered expertise.<br/><em>Connected thinking.</em></h1>
+<h1 class="wp-block-heading">BUILT TO<br><em>MOVE YOU.</em></h1>
 <!-- /wp:heading -->
-
 <!-- wp:paragraph -->
-<p>From the first strategic question to the final line of code. A connected set of capabilities, shaped around your ambitions.</p>
+<p>Six connected capabilities. One team that sees the whole picture.</p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
-
 <!-- wp:group {"className":"avenor-width archive-collection"} -->
 <div class="wp-block-group avenor-width archive-collection">
-<!-- wp:avenor/services-grid {"count":6,"columns":3} /-->
+<!-- wp:avenor/services-grid {"count":6,"columns":2} /-->
 </div>
 <!-- /wp:group -->
-
 <!-- wp:pattern {"slug":"avenor/contact-cta"} /-->
-

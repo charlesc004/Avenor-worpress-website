@@ -1,101 +1,88 @@
 <?php
 /**
- * Title: Ways to work together
+ * Title: Engagement
  * Slug: avenor/engagement
  * Categories: avenor
  * @package Avenor
  */
 ?>
 
-<!-- wp:group {"className":"section engagement-section"} -->
-<div class="wp-block-group section engagement-section">
-<!-- wp:group {"className":"avenor-width"} -->
-<div class="wp-block-group avenor-width">
+<!-- wp:group {"className":"avenor-width section","tagName":"section"} -->
+<section class="wp-block-group avenor-width section">
 <!-- wp:group {"className":"section-heading-row"} -->
 <div class="wp-block-group section-heading-row">
-<!-- wp:group {"className":""} -->
-<div class="wp-block-group ">
+<!-- wp:group -->
+<div class="wp-block-group">
 <!-- wp:paragraph {"className":"eyebrow"} -->
-<p class="eyebrow">A collaboration that fits</p>
+<p class="eyebrow">HOW WE CAN HELP</p>
 <!-- /wp:paragraph -->
-
 <!-- wp:heading {"level":2} -->
-<h2 class="wp-block-heading">The right support.<br/><em>At the right moment.</em></h2>
+<h2 class="wp-block-heading">Start where<br>you need us.</h2>
 <!-- /wp:heading -->
 </div>
 <!-- /wp:group -->
-
-<!-- wp:paragraph -->
-<p>From the first question to your next chapter. Three ways to move forward together.</p>
-<!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
-
 <!-- wp:group {"className":"engagement-grid"} -->
 <div class="wp-block-group engagement-grid">
 <!-- wp:group {"className":"engagement-card"} -->
 <div class="wp-block-group engagement-card">
 <!-- wp:paragraph {"className":"eyebrow"} -->
-<p class="eyebrow">01 / Find your direction</p>
+<p class="eyebrow">01 / DISCOVER</p>
 <!-- /wp:paragraph -->
-
 <!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading">A clearer starting point</h3>
+<h3 class="wp-block-heading">Find your direction.</h3>
 <!-- /wp:heading -->
-
 <!-- wp:paragraph -->
-<p>Make sense of the opportunity. A focused discovery engagement brings research, priorities, and a practical roadmap into focus.</p>
+<p>A focused review of the challenge, priorities and decisions ahead.</p>
 <!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p><a href="/contact/">Explore digital strategy ↗</a></p>
-<!-- /wp:paragraph -->
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/contact/">Discuss this approach <span aria-hidden="true">↗</span></a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
 </div>
 <!-- /wp:group -->
-
 <!-- wp:group {"className":"engagement-card"} -->
 <div class="wp-block-group engagement-card">
 <!-- wp:paragraph {"className":"eyebrow"} -->
-<p class="eyebrow">02 / Bring it to life</p>
+<p class="eyebrow">02 / CREATE</p>
 <!-- /wp:paragraph -->
-
 <!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading">An idea, made real</h3>
+<h3 class="wp-block-heading">Build the next chapter.</h3>
 <!-- /wp:heading -->
-
 <!-- wp:paragraph -->
-<p>From your first prototype to a dependable platform. A collaborative project team connects thoughtful design with careful delivery.</p>
+<p>Strategy, design and engineering connected around a clear delivery scope.</p>
 <!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p><a href="/contact/">Discuss your project ↗</a></p>
-<!-- /wp:paragraph -->
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/contact/">Discuss this approach <span aria-hidden="true">↗</span></a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
 </div>
 <!-- /wp:group -->
-
 <!-- wp:group {"className":"engagement-card"} -->
 <div class="wp-block-group engagement-card">
 <!-- wp:paragraph {"className":"eyebrow"} -->
-<p class="eyebrow">03 / Keep moving forward</p>
+<p class="eyebrow">03 / EVOLVE</p>
 <!-- /wp:paragraph -->
-
 <!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading">A partner for what’s next</h3>
+<h3 class="wp-block-heading">Make it work harder.</h3>
 <!-- /wp:heading -->
-
 <!-- wp:paragraph -->
-<p>Make informed technical decisions as your business evolves. Independent guidance and a considered plan for continuous improvement.</p>
+<p>Improve an existing platform with evidence, focused changes and continuity.</p>
 <!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p><a href="/contact/">Talk about ongoing support ↗</a></p>
-<!-- /wp:paragraph -->
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/contact/">Discuss this approach <span aria-hidden="true">↗</span></a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
 </div>
 <!-- /wp:group -->
 </div>
 <!-- /wp:group -->
-</div>
+</section>
 <!-- /wp:group -->
-</div>
-<!-- /wp:group -->
-
